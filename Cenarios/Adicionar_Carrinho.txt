@@ -1,0 +1,23 @@
+Cenário: Adicionar Produto ao Carrinho
+
+CT01: Acesso à página da loja. 
+DADO que o usuário acessou a plataforma (https://magento.nublue.co.uk)
+QUANDO clicar no menu "Whats's New"
+ENTÃO A plataforma deve direcionar o Usuário para a página de novidades(https://magento.nublue.co.uk/what-is-new.html)
+
+CT02: Escolha de produto
+
+DADO que o usuário está na tela de Novidade (https://magento.nublue.co.uk/what-is-new.html)
+QUANDO Selecionar um produto
+E A página de produto for exibida
+E selecionar o tamanho 
+E selecionar a cor
+E preencher a quantidade
+E Clicar no botão "Add to Cart"
+ENTÃO o item é adicionado no carrinho
+
+CT03: Validar adição ao carrinho
+
+DADO que o Usuário adicionou um produto no carrinho
+QUANDO Clicar no icone do carrinho
+ENTÃO o submenu do carrinho deve ser exibido

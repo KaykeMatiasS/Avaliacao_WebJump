@@ -1,0 +1,32 @@
+
+Cenário: Cadastro de Usuário
+
+CT01: Acesso ao cadastro de Usuário. 
+
+DADO que o usuário acessou a plataforma 
+E a página inicial for exibida
+QUANDO acessar o menu "Create An Account"
+ENTÃO A plataforma deve direcionar o Usuário para a criação de conta
+
+CT02: Preenchimento de campos com sucesso
+
+DADO que o usuário está na tela de criação de contas
+E os campos estão vazios
+QUANDO Preencher o campo de "First Name" 
+E Preencher o campo de "Last Name"
+E Optar pelo campo opcional de "Newsletter"
+E Optar pelo campo opcional de "Remote Shopping Assistance"
+E Preencher o campo de "Email"
+E Preencher o campo de "Password"
+E Preencher o campo "Confirm Password"
+ENTÃO os campos obrigatórios devem estar preenchidos
+E o campo de "Email" deve ser válido
+
+CT03: Criação de conta
+
+DADO que os campos estão preenchidos
+E o email é valido
+QUANDO o usuário clicar no botão "Create an Account"
+ENTÃO a plataforma valida o Email
+E a conta é criada
+E direciona o usuário para seu perfil 

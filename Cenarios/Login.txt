@@ -1,0 +1,19 @@
+Cenário: Login
+
+CT01: Acesso ao login de Usuário. 
+
+DADO que o usuário acessou a plataforma (https://magento.nublue.co.uk)
+E a página inicial for exibida
+E possui cadastro
+QUANDO acessar o menu "Sign In"
+ENTÃO A plataforma deve direcionar o Usuário para a página de  Login (https://magento.nublue.co.uk/customer/account/login/referer)
+
+CT02: Preenchimento de campos com sucesso
+
+DADO que o usuário está na tela de Login
+E os campos estão vazios
+QUANDO Preencher o campo "Email" com roni_cost@example.com
+E Preencher o campo "Password" com roni_cost3@example.com
+E Clicar no botão "Sign In"
+ENTÃO o acesso é realizado 
+

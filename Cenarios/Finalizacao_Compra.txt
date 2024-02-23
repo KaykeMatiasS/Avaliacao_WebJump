@@ -1,0 +1,23 @@
+Cenário: Finalização de Compra
+
+CT01: Seguir para o pagamento. 
+DADO que o usuário adicionou um produto ao carrinho
+QUANDO clicar no ícone do carrinho
+E clicar em "Proceed to Checkout
+ENTÃO A plataforma deve direcionar o Usuário para a finalização de compra(https://magento.nublue.co.uk/what-is-new.html)
+
+CT02: Preencher dados de entrega
+
+DADO que o usuário está na tela dados de entrega (https://magento.nublue.co.uk/checkout/#shipping)
+QUANDO Selecionar selecionar um endereço de entrega
+E selecionar o método de entrega "Shipping Methods"
+E Clicar em Next
+ENTÃO a plataforma direciona o Usuário para a página de pagamento
+
+CT03: Finalização de compra
+
+DADO que o Usuário está na tela de pagamento (https://magento.nublue.co.uk/checkout/#payment)
+QUANDO Selecionar a checkbox de confirmação de endereço de cobrança e entrega
+E clicar em "Place Order"
+ENTÃO a plataforma finaliza o pedido e direciona o usuário para a tela de confirmação
+E o número d pedido é exibido
