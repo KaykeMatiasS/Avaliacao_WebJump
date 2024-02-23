@@ -1,13 +1,13 @@
 Cenário: Adicionar Produto ao Carrinho
 
 CT01: Acesso à página da loja. 
-DADO que o usuário acessou a plataforma (https://magento.nublue.co.uk)
+DADO que o usuário acessou a plataforma 
 QUANDO clicar no menu "Whats's New"
-ENTÃO A plataforma deve direcionar o Usuário para a página de novidades(https://magento.nublue.co.uk/what-is-new.html)
+ENTÃO A plataforma deve direcionar o Usuário para a página de novidades
 
 CT02: Escolha de produto
 
-DADO que o usuário está na tela de Novidade (https://magento.nublue.co.uk/what-is-new.html)
+DADO que o usuário está na tela de Novidade 
 QUANDO Selecionar um produto
 E A página de produto for exibida
 E selecionar o tamanho 
